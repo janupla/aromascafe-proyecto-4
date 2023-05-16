@@ -1,11 +1,12 @@
-import React from 'react';
 
-const Contacto = () => {
+import { ContactForm } from './contactForm/ContactForm.jsx';
+
+export function Contacto(){
     return (
         <div>
-            <h1>contactenos</h1>
+            <h1>Formulario de Contacto</h1>
+            <ContactForm /><ContactForm />
         </div>
     );
 };
 
-export default Contacto;
