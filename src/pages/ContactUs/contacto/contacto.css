@@ -1,0 +1,11 @@
+.tittle-center{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+@media (max-width: 768px) {
+    .title-center {
+        padding-top: 10%;
+    }
+}
