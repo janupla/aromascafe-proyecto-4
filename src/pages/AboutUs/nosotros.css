@@ -1,0 +1,26 @@
+.nosotros-inicio {
+    text-align: center;
+    padding: 20px;
+    background-color: burlywood;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80vh;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.nosotros-inicio img {
+
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

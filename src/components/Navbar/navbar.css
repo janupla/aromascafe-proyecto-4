@@ -1,73 +1,82 @@
-.nav-container {
-    background-color: peachpuff;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 5px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-}
-
-.logo {
-    display: inline-block;
-    margin-left: auto;
-    width: 50px;
-    height: 50px;
-}
-
-nav {
+.cabecera {
     width: 100%;
-    background-color: peachpuff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    background-color: rosybrown;
+    padding: 1em;
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-}
-
-li {
-    margin-left: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-a:hover {
-    background-color: brown;
     color: black;
 }
 
-@media (max-width: 360px) {
-    .nav-container {
-        display: block;
-        height: auto;
-        padding: 10px;
-    }
+.cabecera-nav {}
 
-    .logo {
-        margin: 0 auto;
-    }
-
-    ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    li {
-        margin: 10px 0;
-    }
+.logo {
+    width: 20%;
+    height: auto;
+    flex-shrink: 0;
 }
 
+.cabecera-ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+.cabecera-li {
+    margin: 0 .5em;
+    justify-content: flex-end;
+}
+
+.cabecera-a {}
+
+.cabecera-button {
+
+    display: none;
+    cursor: pointer;
+
+}
+
+.cabecera-svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+
+}
+
+@media screen and (max-width:480px) {
+    .cabecera-button {
+        display: flex;
+    }
+
+    .cabecera-nav {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+        opacity: 0;
+        overflow: hidden;
+        transition: all;
+        .5s ease;
+    }
+
+    .cabecera-nav.isActive {
+        height: 50vh;
+        opacity: 1;
+
+    }
+
+    .cabecera-ul {
+        flex-direction: column;
+    }
+
+    .cabecera-li {
+        margin: .5em 0;
+    }
+}
