@@ -16,7 +16,9 @@ export function Product({ name, description, price, img }) {
             </Card.Body>
 
             <Card.Body className="card-body-text">
-                <Card.Text>{price}</Card.Text>
+                <Card.Text>
+                    {price}
+                    </Card.Text>
             </Card.Body>
         </Card>
     );

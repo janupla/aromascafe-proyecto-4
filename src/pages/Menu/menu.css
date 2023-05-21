@@ -1,0 +1,12 @@
+.menu-container {
+    margin-top: 2rem;
+}
+
+
+
+.menu-content {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

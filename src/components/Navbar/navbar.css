@@ -10,11 +10,12 @@
     color: black;
 }
 
-.cabecera-nav {}
+
 
 .logo {
-    width: 20%;
-    height: auto;
+    order: -1;
+    width: 30%;
+    padding: 20px;
     flex-shrink: 0;
 }
 
@@ -32,7 +33,9 @@
     justify-content: flex-end;
 }
 
-.cabecera-a {}
+.cabecera-a {
+    text-align: center;
+}
 
 .cabecera-button {
 
@@ -44,7 +47,7 @@
 .cabecera-svg {
     width: 2em;
     height: 2em;
-    fill: white;
+
 
 }
 
@@ -62,8 +65,8 @@
         height: 0vh;
         opacity: 0;
         overflow: hidden;
-        transition: all;
-        .5s ease;
+        transition: all .5s ease;
+
     }
 
     .cabecera-nav.isActive {

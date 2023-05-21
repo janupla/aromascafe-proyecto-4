@@ -1,22 +1,23 @@
-import { Container, Row } from "react-bootstrap";
-import { Product } from "./productos/Product.jsx";
-import './products.css'
+import { Col, Container, Row } from "react-bootstrap";
+import {Product} from "../productos/Product.jsx";
+import './products.css';
 
 
 export function Products() {
-    const Productos = [{ name: "Producto 1", description: "Descripción producto 1", img: "url", price: $3990 },
-    { name: "Producto 2", description: "Descripción producto 2", img: "url", price: $5000 },
-    { name: "Producto 3", description: "Descripción producto 3", img: "url", price: $6800 },
-    { name: "Producto 4", description: "Descripción producto 4", img: "url", price: $2300 },
-    { name: "Producto 5", description: "Descripción producto 5", img: "url", price: $3500 }]
+    const products = [{ name: "Café", description: "Café helado", img: "https://i.ibb.co/kHPh2XF/cafehelado.jpg", price: 3990 },
+    { name: "Cappuccino", description: "Cappuccino con crema", img: "https://i.ibb.co/6PgCSwq/cappuccino.jpg", price: 5000 },
+    { name: "Moccacino", description: "Moccacino con crema", img: "https://i.ibb.co/7Q0DQr3/mocaccino.jpg", price: 5000 },
+    { name: "Cheesecake", description: "Cheesecake de frutos rojos", img: "https://i.ibb.co/8drX5BC/cheesecake.jpg", price: 2300 },
+    { name: "Panini", description: "Panini con jamón serrano", img: "https://i.ibb.co/LtkNggT/panini.jpg", price: 3500 }]
 
     return (
         <Container>
             <Row className='products'>
-                {products.map(product =>{
+                {products.map((product, index )=>{
                     const{name, description, price, img} = product
+                    const key=`product${index}`
                     return(
-                        <Col>
+                        <Col key={key}>
                         <Product name={name} description={description} price= {price} img= {img}
                         ></Product>
                         </Col>
