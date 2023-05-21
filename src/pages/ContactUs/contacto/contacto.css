@@ -1,11 +1,9 @@
-.tittle-center{
-    text-align: center;
-    justify-content: center;
-    
+.contacto-caja{
+    height: 80vh;
+    background-color: antiquewhite;
 }
 
-@media (max-width: 768px) {
-    .title-center {
-        padding-top: 10%;
-    }
+.titulo-contacto{
+    padding: 2%;
+    text-align: center;
 }

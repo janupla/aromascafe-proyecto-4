@@ -4,8 +4,8 @@ import './contacto.css';
 
 function Contacto(){
     return (
-        <div>
-            <h1 className='tittle-center'>Formulario de Contacto</h1>
+        <div className='contacto-caja'>
+            <h1 className='titulo-contacto'>Formulario de Contacto</h1>
             <ContactForm />
             
         </div>

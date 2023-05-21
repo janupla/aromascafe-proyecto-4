@@ -1,13 +1,13 @@
+import { Container } from "react-bootstrap";
+import { Products } from "./productos/Products";
 
 
 const Menu = () => {
     return (
-        <div>
-            <h1>
-                Aqui está la carta
-            
-            </h1>
-        </div>
+        <Container>
+            <h1>Menú</h1>
+            <Products></Products>
+        </Container>
     );
 };
 

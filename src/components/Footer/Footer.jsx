@@ -1,18 +1,12 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import './footer.css';
+import React from 'react';
+import './Footer.css';
 
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <Container>
-                <Row>
-                    <Col xs={12} className="text-center">
-                        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-                    </Col>
-                </Row>
-            </Container>
-        </footer>
-    );
-};
+function Footer() {
+return (
+<footer>
+    <p>© 2023 AromasCafe. Todos los derechos reservados.</p>
+</footer>
+);
+}
 
 export default Footer;

@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Nosotros from './pages/AboutUs/Nosotros.jsx';
 import Menu from './pages/Menu/Menu.jsx';
-import Reserva from './pages/Reservations/Reserva.jsx';
+import Reserva from './pages/Reservations/ReservationForm/Reserva.jsx'
 import Contacto from './pages/ContactUs/contacto/Contacto.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,9 +20,13 @@ function App() {
           <Route path="/reserva" element={<Reserva />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
+
       </Router>
+      <div><Footer /></div>
     </div>
-    
+
+
+
 
   );
 }
