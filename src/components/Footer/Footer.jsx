@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
 return (
 <footer>
-    <p>© 2023 AromasCafe. Todos los derechos reservados.</p>
+    <p>Dirección Av. San Martin #431, Viña del Mar. © 2023 AromasCafe. Todos los derechos reservados.</p>
 </footer>
 );
 }
